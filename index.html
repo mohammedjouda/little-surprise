@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#182b49">
-<meta name="description" content="مفاجأة صغيرة لوفاء من عائلة عطية">
+<meta name="description" content="مفاجأة صغيرة لوفاء من عيلتنا">
 <meta property="og:title" content="مفاجأة صغيرة لوفاء 🎁">
 <meta property="og:description" content="في إشي حلو معمول لمناسبة حلوة… افتحي المفاجأة واكتشفيها.">
 <meta property="og:type" content="website">
@@ -24,7 +24,7 @@
 <section class="scene night active" id="welcome" aria-labelledby="welcome-title">
 <div class="glow one"></div><div class="glow two"></div>
 <div class="wrap">
-<div class="eyebrow">✦ من عائلة عطية · بكل محبة</div>
+<div class="eyebrow">✦ من عيلتنا · بكل محبة</div>
 <div class="big-gift" aria-hidden="true">🎁</div>
 <h1 class="headline" id="welcome-title">جاهزين لمفاجأة صغيرة؟</h1>
 <p class="sub">في إشي حلو معمول لمناسبة حلوة…<br>وعشان اليوم مش يوم عادي ✨</p>
@@ -56,7 +56,7 @@
 </div></section>
 <section class="scene final-scene" id="final" aria-labelledby="final-title">
 <div class="final-card">
-<div class="eyebrow" style="background:#182b4909;color:#987331;border-color:#eadfcf;margin-bottom:18px">رسالة من عائلة عطية ❤️</div>
+<div class="eyebrow" style="background:#182b4909;color:#987331;border-color:#eadfcf;margin-bottom:18px">رسالة من عيلتنا ❤️</div>
 <h2 id="final-title">كل سنة وإنتِ بخير يا وفاء! 🎉</h2>
 <div class="family-copy">يا رب تكون سنتك الجديدة مليانة أيام حلوة، وراحة بال، وضحكات، وأخبار بتفرّح القلب.
 
@@ -66,7 +66,7 @@
 
 كل عام وإنتِ بألف خير، وعقبال سنين كثيرة كلها صحة وسعادة ونجاح. 🎉</div>
 <div class="divider"></div>
-<div class="personal"><strong>ومنّي أنا شخصياً…</strong>هاي هدية بسيطة منّي، حبيت أعملها بإيدي بدل المعايدة المعتادة، وإن شاء الله تعجبك وتخلّي يومك أحلى شوي. 😊<div class="signature">محمد — عائلة عطية</div></div>
+<div class="personal"><strong>ومنّي أنا شخصياً…</strong>هاي هدية بسيطة منّي، حبيت أعملها بإيدي بدل المعايدة المعتادة، وإن شاء الله تعجبك وتخلّي يومك أحلى شوي. 😊<div class="signature">محمد — عيلتنا</div></div>
 <p style="font-weight:900;color:#182b49;font-size:1.2rem;margin:20px 0 0">كل سنة وإنتِ بخير يا وفاء ❤️</p>
 <div class="final-actions"><button class="btn btn-gold" id="restartBtn">نعيد المفاجأة ✨</button><button class="btn btn-light" id="copyBtn">نسخ المعايدة</button></div>
 <p id="copyStatus" role="status" aria-live="polite" style="font-size:.92rem;color:#647089;margin:12px 0 0;min-height:1.5em"></p>
@@ -92,7 +92,7 @@ function confetti(){if(matchMedia('(prefers-reduced-motion: reduce)').matches)re
 function openGift(){show('final');confetti();}
 $('#openGift').addEventListener('click',openGift);$('#openGiftAlt').addEventListener('click',openGift);
 $('#restartBtn').addEventListener('click',()=>{seen.clear();document.querySelectorAll('[data-moment]').forEach(b=>{b.classList.remove('done');b.querySelector('small').textContent='اضغطوا للاكتشاف';});$('#progressText').textContent='اكتشفتوا ٠ من ٣';$('#progressFill').style.width='0%';document.querySelector('[role=progressbar]').setAttribute('aria-valuenow','0');$('#revealBtn').classList.add('hidden');$('#momentMessage').textContent='كل محطة بتقرّبنا من المفاجأة…';$('#copyStatus').textContent='';show('welcome');});
-const greeting='كل سنة وإنتِ بخير يا وفاء! 🎉\n\nيا رب تكون سنتك الجديدة مليانة أيام حلوة، وراحة بال، وضحكات، وأخبار بتفرّح القلب.\n\nنتمنالك سنة أجمل من اللي قبلها، تتحقق فيها أمنياتك، وتكون فيها مناسبات حلوة نحتفل فيها سوا، وأوقات حلوة تجمعنا دايماً.\n\nوإن شاء الله تضل أيامنا مليانة لَمّة ومحبة وفرح، وتكون هالسنة بداية لأشياء حلوة كثير.\n\nكل عام وإنتِ بألف خير، وعقبال سنين كثيرة كلها صحة وسعادة ونجاح. 🎉\n\nومنّي أنا شخصياً… هاي هدية بسيطة منّي، حبيت أعملها بإيدي بدل المعايدة المعتادة، وإن شاء الله تعجبك وتخلّي يومك أحلى شوي. 😊\n\nمحمد — عائلة عطية';
+const greeting='كل سنة وإنتِ بخير يا وفاء! 🎉\n\nيا رب تكون سنتك الجديدة مليانة أيام حلوة، وراحة بال، وضحكات، وأخبار بتفرّح القلب.\n\nنتمنالك سنة أجمل من اللي قبلها، تتحقق فيها أمنياتك، وتكون فيها مناسبات حلوة نحتفل فيها سوا، وأوقات حلوة تجمعنا دايماً.\n\nوإن شاء الله تضل أيامنا مليانة لَمّة ومحبة وفرح، وتكون هالسنة بداية لأشياء حلوة كثير.\n\nكل عام وإنتِ بألف خير، وعقبال سنين كثيرة كلها صحة وسعادة ونجاح. 🎉\n\nومنّي أنا شخصياً… هاي هدية بسيطة منّي، حبيت أعملها بإيدي بدل المعايدة المعتادة، وإن شاء الله تعجبك وتخلّي يومك أحلى شوي. 😊\n\nمحمد — عيلتنا';
 $('#copyBtn').addEventListener('click',async()=>{const status=$('#copyStatus');try{await navigator.clipboard.writeText(greeting);status.textContent='تم نسخ المعايدة، جاهزة للمشاركة ❤️';}catch(e){const area=document.createElement('textarea');area.value=greeting;area.style.position='fixed';area.style.opacity='0';document.body.appendChild(area);area.select();const ok=document.execCommand('copy');area.remove();status.textContent=ok?'تم نسخ المعايدة، جاهزة للمشاركة ❤️':'تعذّر النسخ تلقائياً؛ يمكنك تحديد نص المعايدة ونسخه يدوياً.';}});
 const stars=$('#stars');for(let i=0;i<28;i++){const s=document.createElement('span');s.className='star';s.textContent=i%4===0?'✦':'·';s.style.left=(Math.random()*100)+'%';s.style.top=(Math.random()*100)+'%';s.style.fontSize=(10+Math.random()*17)+'px';s.style.animationDelay=(Math.random()*3)+'s';stars.appendChild(s);}
 })();
